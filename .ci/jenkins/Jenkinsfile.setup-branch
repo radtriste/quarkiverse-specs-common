@@ -130,11 +130,8 @@ String getBuildBranch() {
 
 String getQuarkiverseSpecsCommonVersion() {
     return params.QUARKIVERSE_SPECS_COMMON_VERSION
-}
-
-String getGitAuthorCredsID() {
-    return env.AUTHOR_CREDS_ID
-}
++
++func installBuilderSer
 
 MavenCommand getMavenCommand(String directory) {
     return new MavenCommand(this, ['-fae', '-ntp'])
@@ -150,5 +147,5 @@ void runMavenDeploy(String directory) {
         mvnCmd.withDeployRepository(env.MAVEN_DEPLOY_REPOSITORY)
     }
 
-    mvnCmd.skipTests(true).run('clean deploy')
+    echo mvnCmd.skipTests(true).getFullRunCommand('clean deploy')
 }
