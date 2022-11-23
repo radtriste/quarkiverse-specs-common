@@ -21,13 +21,13 @@ git:
     name: radtriste
     credentials_id: radtriste
     token_credentials_id: radtriste-gh-token
-  bot_author: # This is meant to disappear in the near future
+  bot_author:
     name: radtriste-bot-account
     credentials_id: radtriste-bot
-  fork_author: # Used on repository where a fork is needed
+  fork_author:
     name: radtriste-bot-account
     credentials_id: radtriste-bot
-  quarkus: # Used by quarkus platform jobs
+  quarkus:
     author:
       name: radtriste
       credentials_id: radtriste
